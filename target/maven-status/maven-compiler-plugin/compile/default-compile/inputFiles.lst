@@ -1,0 +1,8 @@
+D:\git\messaging-core\src\main\java\br\com\kerubin\api\messaging\core\DomainEventEnvelope.java
+D:\git\messaging-core\src\main\java\br\com\kerubin\api\messaging\core\DomainEvent.java
+D:\git\messaging-core\src\main\java\br\com\kerubin\api\messaging\core\DomainEventEnvelopeBuilder.java
+D:\git\messaging-core\src\main\java\br\com\kerubin\api\messaging\core\MessagingRabbitConfig.java
+D:\git\messaging-core\src\main\java\br\com\kerubin\api\messaging\core\DomainEventPublisher.java
+D:\git\messaging-core\src\main\java\br\com\kerubin\api\messaging\utils\Utils.java
+D:\git\messaging-core\src\main\java\br\com\kerubin\api\messaging\constants\MessagingConstants.java
+D:\git\messaging-core\src\main\java\br\com\kerubin\api\messaging\core\DomainEntityEventsPublisher.java

@@ -1,0 +1,8 @@
+br\com\kerubin\api\messaging\core\DomainEntityEventsPublisher.class
+br\com\kerubin\api\messaging\core\DomainEvent.class
+br\com\kerubin\api\messaging\core\MessagingRabbitConfig.class
+br\com\kerubin\api\messaging\core\DomainEventEnvelopeBuilder.class
+br\com\kerubin\api\messaging\utils\Utils.class
+br\com\kerubin\api\messaging\core\DomainEventEnvelope.class
+br\com\kerubin\api\messaging\core\DomainEventPublisher.class
+br\com\kerubin\api\messaging\constants\MessagingConstants.class
