@@ -5,12 +5,14 @@ public class DomainEventEnvelope<T extends DomainEvent> {
 private static final String APPLICATION = "kerubin";
 	
 	final private String application = APPLICATION;
+
 	private String domain;
 	private String service;
 	private String tenant;
 	private String primitive;
 	private String key;
 	private String user;
+	private String tenantAccountType;
 	
 	private T payload;
 	
@@ -26,6 +28,7 @@ private static final String APPLICATION = "kerubin";
 		this.payload = builder.getPayload();
 		this.key = builder.getKey();
 		this.user = builder.getUser();
+		this.tenantAccountType = builder.getTenantAccountType();
 	}
 
 	public String getDomain() {
@@ -88,5 +91,37 @@ private static final String APPLICATION = "kerubin";
 		this.user = user;
 	}
 	
+	public String getTenantAccountType() {
+		return tenantAccountType;
+	}
+
+	public void setTenantAccountType(String tenantAccountType) {
+		this.tenantAccountType = tenantAccountType;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("DomainEventEnvelope [application=");
+		builder.append(application);
+		builder.append(", domain=");
+		builder.append(domain);
+		builder.append(", service=");
+		builder.append(service);
+		builder.append(", tenant=");
+		builder.append(tenant);
+		builder.append(", primitive=");
+		builder.append(primitive);
+		builder.append(", key=");
+		builder.append(key);
+		builder.append(", user=");
+		builder.append(user);
+		builder.append(", tenantAccountType=");
+		builder.append(tenantAccountType);
+		builder.append(", payload=");
+		builder.append(payload);
+		builder.append("]");
+		return builder.toString();
+	}
 	
 }

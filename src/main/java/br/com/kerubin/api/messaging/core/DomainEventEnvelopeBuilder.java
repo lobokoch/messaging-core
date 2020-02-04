@@ -9,6 +9,16 @@ public class DomainEventEnvelopeBuilder<T extends DomainEvent> {
 	private String tenant;
 	private String user;
 	private T payload;
+	private String tenantAccountType;
+	
+	public DomainEventEnvelopeBuilder<T> tenantAccountType(String tenantAccountType) {
+		this.tenantAccountType = tenantAccountType;
+		return this;
+	}
+	
+	public String getTenantAccountType() {
+		return tenantAccountType;
+	}
 	
 	private DomainEventEnvelopeBuilder(String primitive, T payload) {
 		this.primitive = primitive;
