@@ -71,7 +71,7 @@ public class DomainEventUtils {
 	}
 	
 	public static String mountTopicName(String domain, String service) {
-		String topicName = MessageFormat.format("{0}_{1}_{2}_{3}", 
+		String topicName = MessageFormat.format("{0}.{1}.{2}.{3}", 
 				DomainEventConstants.APPLICATION, 
 				domain, service, 
 				DomainEventConstants.TOPIC_PREFFIX);
